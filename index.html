@@ -1,416 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
-            <meta charset="UTF-8" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <link rel="stylesheet" href="css/styles.css" />
-            <title>Gmail Page</title>
-      </head>
-      <body>
-            <!-- Header Starts -->
-		<nav class= "navbar bg-light">
-            <div class="container">
-                  <div class="headerLeft">
-                        <img src="assets/menu.png" alt="menu" class="leftIcons" />
-                        <img src="assets/gmail_logo_final.jpg" alt="logo" class="gmail"/>
-                  </div>
-                  <div class="headerMiddle">
-                        <img src="assets/search.png" alt="search" class="icons"/>
-                        <input type="text" placeholder="Search mail" />
-                        <img src="assets/tune.png" alt="tune" class="icons"/>
-                  </div>
-                  <div class="headerRight">
-                        <img src="assets/apps.png" alt="apps" class="icons"/>
-                        <img src="assets/notification.png" alt="notification" class="icons"/>
-                        <img src="assets/account.png" alt="user" class="icons"/>
-                  </div>
-            </div>
-		</nav>
-            <!-- Header Ends -->
-            <!-- Main Body Starts -->
-            <div class="mainBody">
-                  <!-- Sidebar Starts -->
-                  <div class="sidebar">
-                        <button class="sidebarCompose">
-                              <img src="assets/add.png" alt="plus" class="icons"/>Compose </button>
-                        <div class="sidebarOption sidebarOption__active">
-					     <img src="assets/inbox3.png" alt="inbox"/ class="icons"> </span> 
-						<h3>Inbox</h3>                             
-                        </div>
-                        <div class="sidebarOption">
-					     <img src="assets/grade.png" alt="star" class="icons"/>                              
-                              <h3>Starred</h3>
-                        </div>
-                        <div class="sidebarOption">
-					     <img src="assets/schedule.png" alt="time" class="icons"/>                           
-                              <h3>Snoozed</h3>
-                        </div>
-                        <div class="sidebarOption">
-					     <img src="assets/label.png" alt="important" class="icons"/>    
-                              <h3>Important</h3>
-                        </div>
-                        <div class="sidebarOption">
-					     <img src="assets/send.png" alt="sent" class="icons"/>        
-                              <h3>Sent</h3>
-                        </div>
-                        <div class="sidebarOption">
-					     <img src="assets/draft.png" alt="note" class="icons"/>                              
-                              <h3>Drafts</h3>
-                        </div>
-                        <div class="sidebarOption">
-					     <img src="assets/expand.png" alt="more" class="icons"/>
-                              <h3>More</h3>
-                        </div>
-                        <div class="sidebarFooter">
-                              <div class="sidebarFooterIcons">
-                        			<img src="assets/account.png" alt="user" class="icons"/> 
-                        			<img src="assets/duo.png" alt="duo" class="icons"/>
-                        			<img src="assets/call.png" alt="phone" class="icons"/>
+     <head>
+          <link rel="stylesheet" href="css/styles.css" />
+          <link href="Assets/bootstrap.css" rel="stylesheet">
+          <script src="Assets/bootstrap.js"></script>
+          <title>Gmail Page</title>
+     </head>
+     <body>
+          <!-- Header Starts -->
+          <nav class="navbar bg-light sticky-top">
+               <div class="container-fluid p-0">
+                    <div class="col-3 d-flex flex-row align-items-center ps-3">
+                         <img src="assets/menu.png" alt="menu" class="leftIcons" />
+                         <img src="assets/gmail_logo_final.jpg" alt="logo" class="gmail" />
+                    </div>
+                    <div class="col-7 d-flex flex-row align-items-center p-2 pe-5			">
+                         <img src="assets/search.png" alt="search" class="icons" />
+                         <input type="text" placeholder="Search mail" class=" border-0 w-100 p-2 fs-6 bg-transparent text-dark" />
+                         <img src="assets/tune.png" alt="tune" class="icons " />
+                    </div>
+                    <div class="col-2 ps-5 d-flex flex-row align-items-right">
+                         <img src="assets/apps.png" alt="apps" class="icons m-2" />
+                         <img src="assets/notification.png" alt="notification" class="icons m-2" />
+                         <img src="assets/account.png" alt="user" class="icons m-2" />
+                    </div>
+               </div>
+          </nav>
+          <!-- Header Ends -->
+          <!-- Main Body Starts -->
+          <div class="container-fluid p-0">
+               <div class="d-flex flex-row">
+                    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+                         <div class="d-flex flex-column align-items-center pe-2 align-items-sm-start px-3 pt-2 text-white min-vh-100 sticky-top">
+                              <button class="d-flex flex-row align-items-center border-0 mb-3 p-3 shadow bg-white text-dark sidebarCompose">
+                                   <img src="assets/add.png" alt="plus" class="icons pe-1" />COMPOSE </button>
+                              <div class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
+                                   <div class="sidebarOption sidebarOption__active d-flex flex-row align-items-center rounded-pill m-1 fw-bold">
+                                        <img src="assets/inbox3.png" alt="inbox" class="icons me-2" />
+                                        <span>Inbox</span>
+                                   </div>
+                                   <div class="sidebarOption d-flex flex-row align-items-center rounded-pill m-1">
+                                        <img src="assets/grade.png" alt="star" class="icons me-2" />
+                                        <h6>Starred</h6>
+                                   </div>
+                                   <div class="sidebarOption d-flex flex-row align-items-center rounded-pill m-1">
+                                        <img src="assets/schedule.png" alt="time" class="icons me-2" />
+                                        <h6>Snoozed</h6>
+                                   </div>
+                                   <div class="sidebarOption d-flex flex-row align-items-center rounded-pill m-1">
+                                        <img src="assets/label.png" alt="important" class="icons me-2" />
+                                        <h6>Important</h6>
+                                   </div>
+                                   <div class="sidebarOption d-flex flex-row align-items-center rounded-pill m-1">
+                                        <img src="assets/send.png" alt="sent" class="icons me-2" />
+                                        <h6>Sent</h6>
+                                   </div>
+                                   <div class="sidebarOption d-flex flex-row align-items-center rounded-pill m-1">
+                                        <img src="assets/draft.png" alt="note" class="icons me-2" />
+                                        <h6>Drafts</h6>
+                                   </div>
+                                   <div class="sidebarOption d-flex flex-row align-items-center rounded-pill">
+                                        <img src="assets/expand.png" alt="more" class="icons me-2" />
+                                        <h6>More</h6>
+                                   </div>
+                                   <div class="d-flex flex-row justify-content-center">
+                                        <div class="sidebarFooterIcons">
+                                             <img src="assets/account.png" alt="user" class="icons m-2" />
+                                             <img src="assets/duo.png" alt="duo" class="icons m-2" />
+                                             <img src="assets/call.png" alt="phone" class="icons m-2" />
+                                        </div>
+                                   </div>
                               </div>
-                        </div>
-                  </div>
-                  <!-- Sidebar Ends -->
-                  <!-- Email List Starts -->
-                  <div class="emailList">
-                        <!-- Settings Starts -->
-                        <div class="emailListSettings">
-                              <div class="emailListSettingsLeft">
-                                    <input type="checkbox" />
-                        			 <img src="assets/expand.png" alt="dropdown" class="icons"/> 
-                        			 <img src="assets/morevert.png" alt="moreVert" class="icons"/>
+                         </div>
+                    </div>
+               <!-- Sidebar Ends -->
+               <!-- Email List Starts -->
+               <div class="emailList">
+                    <!-- Settings Starts -->
+                    <div class="emailListSettings d-flex flex-row justify-content-between sticky-top bg-white text-dark p-2">
+                         <div class="emailListSettingsLeft d-flex flex-row">
+                              <input type="checkbox" />
+                              <img src="assets/expand.png" alt="dropdown" class="icons" />
+                              <img src="assets/morevert.png" alt="moreVert" class="icons" />
+                         </div>
+                         <div class="emailListSettingsRight">
+                              <img src="assets/left.png" alt="chevronLeft" class="icons" />
+                              <img src="assets/right.png" alt="right" class="icons" />
+                              <img src="assets/keyboard.png" alt="keyboard" class="icons" />
+                              <img src="assets/settings.png" alt="settings" class="icons" />
+                         </div>
+                    </div>
+                    <!-- Settings Ends -->
+                    <!-- Section Starts -->
+                    <div class="container-fluid mt-0">
+            			<div class="d-flex flex-row">
+              			<div class="col-sm-3 p-0 d-flex flex-row ">
+                         <div class="section sectionSelected">
+                              <img src="assets/inbox3.png" alt="inbox" class="icons" />
+                              <h4>Primary</h4>
+                         </div>
+                         <div class="section">
+                              <img src="assets/group.png" alt="people" class="icons" />
+                              <h4>Social</h4>
+                         </div>
+                         <div class="section">
+                              <img src="assets/sell.png" alt="offer" class="icons" />
+                              <h4>Promotions</h4>
+                         </div>
+                    </div>
+				<div class="col-sm-3 p-0 "></div>
+            		</div>
+				</div>
+                    <!-- Section Ends -->
+                    <!-- Email List rows starts -->
+                    <div class="emailListList">
+                         <!-- Email Row Starts -->
+                         <div class="emailRow">
+                              <div class="emailRowOptions col-2">
+                                   <input type="checkbox">
+                                   <img src="assets/star.png" alt="star" class="icons" />
+                                   <img src="assets/label.png" alt="label" class="icons" />
                               </div>
-                              <div class="emailListSettingsRight">
-                        			 <img src="assets/left.png" alt="chevronLeft" class="icons"/>
-                        			 <img src="assets/right.png" alt="right" class="icons"/> 
-                        			 <img src="assets/keyboard.png" alt="keyboard" class="icons"/>
-                        			 <img src="assets/settings.png" alt="settings" class="icons"/>
+                              <h6 class="emailRowTitle  col-2">Test</h6>
+                              <div class="emailRowMessage col-6 pt-2 d-flex flex-row align-items-center fs-6">
+                                   <h6> Subject Topic <span class="emailRowDescription"> - Body Template </span>
+                                   </h6>
                               </div>
-                        </div>
-                        <!-- Settings Ends -->
-                        <!-- Section Starts -->
-                        <div class="emailListSections">
-                              <div class="section sectionSelected">
-                        			 <img src="assets/inbox3.png" alt="inbox" class="icons"/>
-                                    <h4>Primary</h4>
+                              <p class="emailRowTime col-2 text-end">10pm</p>
+                         </div>
+                         <!-- Email Row Ends -->
+                         <!-- Email Row Starts -->
+                         <div class="emailRow">
+                              <div class="emailRowOptions col-2">
+                                   <input type="checkbox">
+                                   <img src="assets/star.png" alt="star" class="icons" />
+                                   <img src="assets/label.png" alt="label" class="icons" />
                               </div>
-                              <div class="section">
-                        			 <img src="assets/group.png" alt="people" class="icons"/>
-                                    <h4>Social</h4>
+                              <h6 class="emailRowTitle  col-2">Test</h6>
+                              <div class="emailRowMessage col-6 pt-2 d-flex flex-row align-items-center fs-6">
+                                   <h6> Subject Topic <span class="emailRowDescription"> - Body Template </span>
+                                   </h6>
                               </div>
-                              <div class="section">
-                        			 <img src="assets/sell.png" alt="offer" class="icons"/>
-                                    <h4>Promotions</h4>
+                              <p class="emailRowTime col-2 text-end">10pm</p>
+                         </div>
+                         <!-- Email Row Ends -->
+                         <!-- Email Row Starts -->
+                         <div class="emailRow">
+                              <div class="emailRowOptions col-2">
+                                   <input type="checkbox">
+                                   <img src="assets/star.png" alt="star" class="icons" />
+                                   <img src="assets/label.png" alt="label" class="icons" />
                               </div>
-                        </div>
-                        <!-- Section Ends -->
-                        <!-- Email List rows starts -->
-                        <div class="emailListList">
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox" name="checkbox" id="check" />
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
+                              <h6 class="emailRowTitle  col-2">Test</h6>
+                              <div class="emailRowMessage col-6 pt-2 d-flex flex-row align-items-center fs-6">
+                                   <h6> Subject Topic <span class="emailRowDescription"> - Body Template </span>
+                                   </h6>
                               </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
+                              <p class="emailRowTime col-2 text-end">10pm</p>
+                         </div>
+                         <!-- Email Row Ends -->
+                         <!-- Email Row Starts -->
+                         <div class="emailRow">
+                              <div class="emailRowOptions col-2">
+                                   <input type="checkbox">
+                                   <img src="assets/star.png" alt="star" class="icons" />
+                                   <img src="assets/label.png" alt="label" class="icons" />
                               </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
+                              <h6 class="emailRowTitle  col-2">Test</h6>
+                              <div class="emailRowMessage col-6 pt-2 d-flex flex-row align-items-center fs-6">
+                                   <h6> Subject Topic <span class="emailRowDescription"> - Body Template </span>
+                                   </h6>
                               </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Google</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Login on New Device <span class="emailRowDescription"> - is this your Device ? </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">2am</p>
+                              <p class="emailRowTime col-2 text-end">10pm</p>
+                         </div>
+                         <!-- Email Row Ends -->
+                         <!-- Email Row Starts -->
+                         <div class="emailRow">
+                              <div class="emailRowOptions col-2">
+                                   <input type="checkbox">
+                                   <img src="assets/star.png" alt="star" class="icons" />
+                                   <img src="assets/label.png" alt="label" class="icons" />
                               </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
+                              <h6 class="emailRowTitle  col-2">Test</h6>
+                              <div class="emailRowMessage col-6 pt-2 d-flex flex-row align-items-center fs-6">
+                                   <h6> Subject Topic <span class="emailRowDescription"> - Body Template </span>
+                                   </h6>
                               </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
+                              <p class="emailRowTime col-2 text-end">10pm</p>
+                         </div>
+                         <!-- Email Row Ends -->
+                         <!-- Email Row Starts -->
+                         <div class="emailRow">
+                              <div class="emailRowOptions col-2">
+                                   <input type="checkbox">
+                                   <img src="assets/star.png" alt="star" class="icons" />
+                                   <img src="assets/label.png" alt="label" class="icons" />
                               </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
+                              <h6 class="emailRowTitle  col-2">Test</h6>
+                              <div class="emailRowMessage col-6 pt-2 d-flex flex-row align-items-center fs-6">
+                                   <h6> Subject Topic <span class="emailRowDescription"> - Body Template </span>
+                                   </h6>
                               </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Google</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Login on New Device <span class="emailRowDescription"> - is this your Device ? </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">2am</p>
+                              <p class="emailRowTime col-2 text-end">10pm</p>
+                         </div>
+                         <!-- Email Row Ends -->
+                         <!-- Email Row Starts -->
+                         <div class="emailRow">
+                              <div class="emailRowOptions col-2">
+                                   <input type="checkbox">
+                                   <img src="assets/star.png" alt="star" class="icons" />
+                                   <img src="assets/label.png" alt="label" class="icons" />
                               </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
+                              <h6 class="emailRowTitle  col-2">Test</h6>
+                              <div class="emailRowMessage col-6 pt-2 d-flex flex-row align-items-center fs-6">
+                                   <h6> Subject Topic <span class="emailRowDescription"> - Body Template </span>
+                                   </h6>
                               </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
+                              <p class="emailRowTime col-2 text-end">10pm</p>
+                         </div>
+                         <!-- Email Row Ends -->
+                         <!-- Email Row Starts -->
+                         <div class="emailRow">
+                              <div class="emailRowOptions col-2">
+                                   <input type="checkbox">
+                                   <img src="assets/star.png" alt="star" class="icons" />
+                                   <img src="assets/label.png" alt="label" class="icons" />
                               </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
+                              <h6 class="emailRowTitle  col-2">Test</h6>
+                              <div class="emailRowMessage col-6 pt-2 d-flex flex-row align-items-center fs-6">
+                                   <h6> Subject Topic <span class="emailRowDescription"> - Body Template </span>
+                                   </h6>
                               </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Google</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Login on New Device <span class="emailRowDescription"> - is this your Device ? </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">2am</p>
-                              </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
-                              </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
-                              </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
-                              </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Google</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Login on New Device <span class="emailRowDescription"> - is this your Device ? </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">2am</p>
-                              </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
-                              </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
-                              </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <span class="icons"><img src="assets/star.png" alt="star" class="icons"/> </span>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Test</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Subject Topic <span class="emailRowDescription"> - Body Template </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">10pm</p>
-                              </div>
-                              <!-- Email Row Ends -->
-                              <!-- Email Row Starts -->
-                              <div class="emailRow">
-                                    <div class="emailRowOptions">
-                                          <input type="checkbox">
-                        			 	  <img src="assets/star.png" alt="star" class="icons"/>
-                        			 	  <img src="assets/label.png" alt="label" class="icons"/>
-                                    </div>
-                                    <h3 class="emailRowTitle">Google</h3>
-                                    <div class="emailRowMessage">
-                                          <h4> Login on New Device <span class="emailRowDescription"> - is this your Device ? </span>
-                                          </h4>
-                                    </div>
-                                    <p class="emailRowTime">2am</p>
-                              </div>
-                              <!-- Email Row Ends -->
-                        </div>
-                        <!-- Email List rows Ends -->
-                  </div>
-                  <!-- Email List Ends -->
-            </div>
-            <!-- Main Body Ends -->
-      </body>
+                              <p class="emailRowTime col-2 text-end">10pm</p>
+                         </div>
+                         <!-- Email Row Ends -->
+                    </div>
+                    <!-- Email List rows Ends -->
+               </div>
+               <!-- Email List Ends -->
+          </div>
+		</div>
+          <!-- Main Body Ends -->
+     </body>
 </html>
